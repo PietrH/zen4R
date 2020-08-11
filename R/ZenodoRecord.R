@@ -1032,7 +1032,7 @@ ZenodoRecord <-  R6Class("ZenodoRecord",
     #exportAs
     exportAs = function(format, filename){
       formats <- c("BibTeX","CSL","DataCite","DublinCore","DCAT","JSON","JSON-LD","GeoJSON","MARCXML")
-      zenodo_url <- self$links$record_html
+      zenodo_url <- self$links$html
       if(is.null(zenodo_url)){
         stop("Ups, this record seems a draft, can't export metadata until it is published!")
       }
